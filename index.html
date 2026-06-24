@@ -219,28 +219,19 @@
     margin-top:14px;font-style:italic;color:var(--ink-soft);font-size:.88rem;
   }
 
-  /* trenino ascii */
-  .train-track{
-    overflow:hidden;
-    width:100%;
-    margin:6px 0 0;
-    -webkit-mask-image:linear-gradient(90deg, transparent, #000 12%, #000 88%, transparent);
-            mask-image:linear-gradient(90deg, transparent, #000 12%, #000 88%, transparent);
-  }
-  .train{
-    display:inline-block;
+  /* principessa ascii */
+  .ascii-art{
+    display:block;
     white-space:pre;
     font-family:'Courier New', monospace;
-    font-size:.62rem;
+    font-size:.7rem;
     line-height:1.05;
-    color:var(--rift-green);
-    text-shadow:0 0 8px rgba(79,224,168,0.5);
-    will-change:transform;
-    animation:chug 14s linear infinite;
-  }
-  @keyframes chug{
-    from{transform:translateX(100%);}
-    to{transform:translateX(-100%);}
+    text-align:center;
+    color:var(--rift-magenta);
+    text-shadow:0 0 10px rgba(196,75,214,0.4);
+    margin:1.6em auto 0;
+    opacity:0;
+    animation:rise 1s ease 1s forwards;
   }
 
   @keyframes rise{
@@ -267,34 +258,35 @@
 <div class="wrap">
 
   <div class="eyebrow">Princess Beyond the Rift</div>
-  <h1> <span class="glow">Messaggio scaduto</span> </h1>
+  <h1> <span class="glow">Grazie!</span> </h1>
   <div class="rule"></div>
 
   <div class="letter">
-    <p class="lead">Era davvero solo networking per un progetto!</p>
+    <p class="lead">Ti ringrazio per avermi aggiunto su Instagram!</p>
 
-    <p>Ho comunque in mente come caratterizzare la protagonista femminile, che rimane comunque ispirata a te pur non avendo alcun tratto di te, un vero peccato!</p>
-
-    <p>La mail che uso per il supporto delle app te la lascio comunque per correttezza, qualora diventassi milionario con questo gioco potrai farmi causa per i diritti sulla protagonista 😂.</p>
-  </div>
-
-  <div class="contacts">
-    <a href="mailto:appmontysup@gmail.com">
-      <span class="ic">✉</span><span class="lbl">Mail</span><span class="val">appmontysup@gmail.com</span>
-    </a>
+    <p>Per qualunque cosa, nel caso, ti scrivo lì!</p>
   </div>
 
   <div class="closing">
     <p class="signoff">👾 <span class="accent">Ciao!</span> 👾</p>
 
-    <div class="train-track" aria-hidden="true">
-      <pre class="train">
-        ____                    o  o  o
-   ___//___\___           _______|__|__|_______
-  /  _      _  \=========/   ____   ____   ____ \
- |  (_)    (_)  |        |   |    | |    | |    | |
- '--O--------O--'--------'---O----O-O----O-O----O'</pre>
-    </div>
+    <pre class="ascii-art" aria-hidden="true">
+            .
+          .:|:.
+       .-=========-.
+        \  .---.  /
+         | ( o o ) |
+          \  \_/  /
+        .--'~~~~~'--.
+       /   \     /   \
+      |  .  '. .'  .  |
+      | / \  | |  / \ |
+      |/   \ | | /   \|
+      '     \| |/     '
+             | |
+            /| |\
+           /_| |_\
+          (___|___)</pre>
   </div>
 
   <div class="cover">
