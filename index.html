@@ -85,10 +85,15 @@
     opacity:0;
     animation:rise .9s ease .3s forwards;
   }
-  h1 .glow{
-    background:linear-gradient(95deg, var(--rift-magenta), var(--rift-violet), var(--rift-green));
+  h1 .glow, .letter .glow{
+    background:linear-gradient(95deg, var(--rift-magenta), var(--rift-violet), var(--rift-green), var(--gold), var(--rift-magenta));
+    background-size:250% auto;
     -webkit-background-clip:text;background-clip:text;
     -webkit-text-fill-color:transparent;
+    animation:shimmer 6s linear infinite;
+  }
+  @keyframes shimmer{
+    to{background-position:250% center;}
   }
 
   .sub{
@@ -246,7 +251,7 @@
   <div class="rule"></div>
 
   <div class="letter">
-    <p class="lead" style="text-align:center;font-size:1.5rem;">Grazie di avermi aggiunto su Instagram!</p>
+    <p class="lead glow" style="text-align:center;font-family:'Cinzel',serif;font-weight:600;font-size:clamp(1.6rem,5.5vw,2.6rem);line-height:1.2;letter-spacing:.02em;">GRAZIE PER AVERMI AGGIUNTO SU INSTAGRAM!</p>
   </div>
 
   <div class="cover">
